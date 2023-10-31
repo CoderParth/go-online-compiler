@@ -10,7 +10,7 @@ import (
 
 func main() {
 	rate := vegeta.Rate{Freq: 20, Per: time.Second} // 20 requests per second
-	duration := 10 * time.Second                      // for 10 seconds
+	duration := 100 * time.Second                      // for 100 seconds
 	targeter := vegeta.NewStaticTargeter(vegeta.Target{
 		Method: "POST",
 		URL:    "http://localhost:8080/execute", 
